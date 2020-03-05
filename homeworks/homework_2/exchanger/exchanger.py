@@ -11,6 +11,9 @@ class Exchanger():
 
     @classmethod
     def load_rate(cls):
+        """
+        Loads exchange rate of
+        """
         if hasattr(cls, 'currency_lib'):
             return
         response = requests.get('https://api.exchangeratesapi.io/2020-03-04')
